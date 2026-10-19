@@ -589,6 +589,12 @@ html.refract .lg.rf::before{filter:url(#lg-distort)}
 .c-card dt{font-size:13.5px;color:rgba(255,255,255,.65)}
 .c-card dd{margin:0;font-size:15px;font-weight:500}
 .c-card dd a{text-decoration:underline;text-underline-offset:3px}
+.c-card dd.tel{display:grid;gap:6px}
+.c-card dd.tel a{display:flex;justify-content:space-between;gap:12px;text-decoration:none;font-variant-numeric:tabular-nums}
+.c-card dd.tel a span{font-weight:700;letter-spacing:.01em}
+.c-card dd.tel a:hover span{text-decoration:underline;text-underline-offset:3px}
+.d-call{font-size:12.5px;color:var(--ink-2);text-align:center;font-variant-numeric:tabular-nums}
+.d-call a{color:var(--navy);font-weight:600}
 footer{background:#0A1430;color:rgba(255,255,255,.62);font-size:13px;line-height:1.8;padding-block:40px 56px}
 footer .cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:28px}
 @media (max-width:760px){footer .cols{grid-template-columns:minmax(0,1fr)}}
@@ -1087,7 +1093,9 @@ textarea.input{height:88px;padding:12px 14px;resize:vertical}
         <div><dt>제안사</dt><dd>주식회사 빅링커 (BigLinker)</dd></div>
         <div><dt>과정명</dt><dd>AI 활용 웹디자인 실무 과정</dd></div>
         <div><dt>교육비</dt><dd>인원과 과정 구성 확정 후 별도 견적</dd></div>
-        <div><dt>문의</dt><dd><a href="https://gobiglinker.com" target="_blank" rel="noopener">gobiglinker.com</a></dd></div>
+        <div><dt>대표 연락처</dt><dd class="tel"><a href="tel:010-2507-0174">Kate Lee<span>010-2507-0174</span></a><a href="tel:010-9253-7319">Kevin Lee<span>010-9253-7319</span></a></dd></div>
+        <div><dt>주소</dt><dd>서울특별시 강남구 영동대로 602, 6층</dd></div>
+        <div><dt>홈페이지</dt><dd><a href="https://gobiglinker.com" target="_blank" rel="noopener">gobiglinker.com</a></dd></div>
       </dl>
     </div>
   </div>
@@ -1096,7 +1104,7 @@ textarea.input{height:88px;padding:12px 14px;resize:vertical}
 
 <footer>
   <div class="wrap cols">
-    <div><img src="assets/logo_white.png" alt="BigLinker" width="69" height="22"><br><b>주식회사 빅링커</b><br>교육 컨설팅 · 기업교육 · 리드코칭<br><a href="https://gobiglinker.com" target="_blank" rel="noopener">gobiglinker.com</a></div>
+    <div><img src="assets/logo_white.png" alt="BigLinker" width="69" height="22"><br><b>주식회사 빅링커</b><br>교육 컨설팅 · 기업교육 · 리드코칭<br>서울특별시 강남구 영동대로 602, 6층<br>T. Kate Lee <a href="tel:010-2507-0174">010-2507-0174</a> · Kevin Lee <a href="tel:010-9253-7319">010-9253-7319</a><br><a href="https://gobiglinker.com" target="_blank" rel="noopener">gobiglinker.com</a></div>
     <div><b>자료 출처</b>
       <ol>
         <li>Figma, <a href="https://www.figma.com/blog/figma-2025-ai-report-perspectives/" target="_blank" rel="noopener">2025 AI Report</a> (2025년 1월, 7개국 2,500명 조사)</li>
@@ -1138,6 +1146,7 @@ textarea.input{height:88px;padding:12px 14px;resize:vertical}
     </div>
     <div class="d-foot">
       <div class="row"><button class="btn btn-line" type="button" id="dCopyBtn">구성 요약 복사</button><a class="btn btn-primary" href="https://gobiglinker.com" target="_blank" rel="noopener">문의하기</a></div>
+      <p class="d-call">전화 문의 · Kate Lee <a href="tel:010-2507-0174">010-2507-0174</a> · Kevin Lee <a href="tel:010-9253-7319">010-9253-7319</a></p>
     </div>
   </aside>
 </div>
